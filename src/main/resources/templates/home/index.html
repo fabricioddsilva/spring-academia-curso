@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Projeto Academia</title>
     <meta name="author" content="Fabrício Dias">
 </head>
 <body>
-    <p>Ola</p>
-    <h1 th:text="${msg}"></h1>
-    <button class="btn btn-primary">botão</button>
+<header>
+    <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/img/diplomado.png" width="80px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMobile">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navMobile" class="navbar-collapse collapse justify-content-end">
+                <a class="nav-item nav-link text-white fw-bold">Home</a>
+                <a class="nav-item nav-link text-white fw-bold">Cadastrar Aluno</a>
+                <a class="nav-item nav-link text-white fw-bold">Pesquisar Aluno</a>
+                <a class="nav-item nav-link btn btn-danger text-white fw-bold">Sair</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
 
 <script src="webjars/jquery/3.6.3/bower.json"></script>
 <script src="webjars/bootstrap/5.2.3/js/bootstrap.bundle.js"></script>

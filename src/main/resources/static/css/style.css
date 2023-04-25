@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+nav {
+    height: 5em;
+
+}
+
+a {
+    cursor: pointer;
+    font-weight: bold;
+}
