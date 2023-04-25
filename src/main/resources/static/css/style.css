@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+
 }
 
 nav {
@@ -11,3 +12,19 @@ a {
     cursor: pointer;
     font-weight: bold;
 }
+
+
+
+#conteudo {
+    height: 777px;
+}
+
+@media screen and (max-width: 667px){
+    .button {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+}
+
