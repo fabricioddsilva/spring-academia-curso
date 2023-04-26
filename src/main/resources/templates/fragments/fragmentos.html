@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Projeto Academia</title>
+    <meta name="author" content="Fabrício Dias">
+</head>
+<body>
+
+
+<header th:fragment="header">
+    <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" th:href="@{/}">
+                <img src="/img/diplomado.png" width="80px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMobile">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navMobile" class="navbar-collapse collapse justify-content-end">
+                <a class="nav-item nav-link text-white fw-bold"><i class="fas fa-home"></i> Home</a>
+                <a class="nav-item nav-link text-white fw-bold"><i class="fas fa-user-graduate"></i> Cadastrar Aluno</a>
+                <a class="nav-item nav-link text-white fw-bold"><i class="fas fa-search"></i> Pesquisar Aluno</a>
+                <a class="nav-item nav-link btn btn-danger text-white fw-bold">Sair</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<footer class="text-center bg-dark" th:fragment="footer">
+    <div>
+        <span class="text-white fw-bold">Todos os Direitos Reservados - 2023 &copy; Fabrício Dias</span>
+    </div>
+</footer>
+
+<script src="webjars/jquery/3.6.3/bower.json"></script>
+<script src="webjars/bootstrap/5.2.3/js/bootstrap.bundle.js"></script>
+<script src="https://kit.fontawesome.com/1ae389d098.js" crossorigin="anonymous"></script>
+</body>
+</html>

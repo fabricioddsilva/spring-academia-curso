@@ -9,24 +9,10 @@
     <meta name="author" content="Fabrício Dias">
 </head>
 <body>
-<header>
-    <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="/img/diplomado.png" width="80px">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMobile">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navMobile" class="navbar-collapse collapse justify-content-end">
-                <a class="nav-item nav-link text-white fw-bold"><i class="fas fa-home"></i> Home</a>
-                <a class="nav-item nav-link text-white fw-bold"><i class="fas fa-user-graduate"></i> Cadastrar Aluno</a>
-                <a class="nav-item nav-link text-white fw-bold"><i class="fas fa-search"></i> Pesquisar Aluno</a>
-                <a class="nav-item nav-link btn btn-danger text-white fw-bold">Sair</a>
-            </div>
-        </div>
-    </nav>
-</header>
+
+<div th:replace="/fragments/fragmentos.html :: header">
+
+</div>
 
 <div class="container text-center align-items-center" id="conteudo">
     <div>
@@ -46,11 +32,11 @@
     </div>
 </div>
 
-<footer class="text-center bg-dark">
-    <div>
-        <span class="text-white fw-bold">Todos os Direitos Reservados - 2023 &copy; Fabrício Dias</span>
-    </div>
-</footer>
+<div th:replace="/fragments/fragmentos.html :: footer">
+
+</div>
+
+
 
 <script src="webjars/jquery/3.6.3/bower.json"></script>
 <script src="webjars/bootstrap/5.2.3/js/bootstrap.bundle.js"></script>
